@@ -15,6 +15,10 @@
     "terminal.integrated.fontSize": 13,
     "workbench.colorTheme": "Default Dark+",
     "workbench.iconTheme": "vscode-icons",
+    "grunt.autoDetect": "off", // 自动检查 task
+    "gulp.autoDetect": "off",
+    "jake.autoDetect": "off",
+    "typescript.tsc.autoDetect": "off",
     "[typescript]": {}, // 语言特定配置
     "files.exclude": {
         "**/.git": true,
@@ -28,4 +32,11 @@
         "**/bower_components": true,
         "**/*.code-search": true
     },
+    "python.formatting.provider": "black",
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
 }

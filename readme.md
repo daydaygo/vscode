@@ -30,7 +30,10 @@
 - 编程世界, 对英文太友好了
 - 简写 = 约定俗成 = 更简洁一些
 ---
+
 部分清单清单, 按照 `[英文简写],[英文原文] [中文常用翻译]` 的格式
+
+---
 - file 文件, folder 文件夹
 - workspace 工作区, 通常一个项目可以作为一个工作区, vscode 可以在工作区之间快速切换
 - command palette, 命令面板, vscode 很多功能都是一个又一个 command, 通过 command palette 可以快速执行 command
@@ -38,10 +41,20 @@
 - keymap 快捷键映射
 - code fold 代码折叠, 折叠代码块, 方便查看
 - encoding 编码, 编码的更多信息, 参考这本书 [编码：隐匿在计算机软硬件背后的语言](https://book.douban.com/subject/20260928/)
-- version control 版本控制, 使用最多是 git, 下面使用 git 代替
+- source control 版本控制, 使用最多是 git, 下面使用 git 代替
 - compiler/interpreter 编译器/解释器, 有些语言需要编译后运行, 如 `java+javac`, 有些语言可以直接运行, 如 `php/python`
-- extension 插件
+- extension 插件, 后文多使用 `ext` 简写
 ---
+- workbench 工作台, 大致等同于打开的 vscode window, 在 theme 设置时会用到
+- editor 编辑器, 主要 coding 的部分
+- editor layout 编辑器布局, 常用 **双开**
+- line number 行号, 是否显示行号
+- gutter 行号与编辑器之间的间隙, 通常展示 git变更/breakpoint 等信息
+- codeLens 界面控件, 一般位于 函数/类 上面, 用来快速执行命令, 如 jupyter notebook / rest client
+---
+- lint compile build test deploy 代码静态检查/编译/打包/测试/部署
+- debugger formatter linter 调试工具/代码格式化工具/代码静态检查工具
+- highlight bracket intellisense lint quickfix go snippet format debug refactor 代码高亮/括号匹配/智能提示/静态检查/快速修复/代码导航/代码片段/格式化/调试/重构
 - IntelliSense 智能提示
 - IntelliCode 基于AI的智能提示
 - LSP, language server protocol, 包含 completion formatting definition 等功能
@@ -94,7 +107,7 @@
         - snippet 代码片段
     - file
         - file folder **workspace**
-        - add folder to workspace: 满足同一个 window 管理多个项目的需求
+        - add folder to workspace: 满足同一个 window 管理多个项目(multi-root workspace, 详情见 [vscode.code-workspace](vscode.code-workspace))的需求
         - autosave
     - edit
         - undo/redo cut/copy/paste
@@ -115,7 +128,7 @@
         - activity bar 相关
             - explorer 文件管理器
             - **search** 搜索
-            - version control
+            - source control
             - run
             - extension
         - panel 相关
@@ -161,7 +174,8 @@
 - 同理, 引入 DAP
 - 更深入思考下: 社会分工越来越细, 各行各业制定标准
 ---
-- IntelliSense: 编程语言 -> LSP -> 编程语言插件
+- IntelliSense: 编程语言 -> LSP -> vscode 编程语言插件 -> vscode editor
+- debug: 编程语言 -> 编程语言 debug tool(如: go 使用 delve, PHP 使用 xdebug) -> DAP -> vscode debug adapter(如: php debug 扩展) -> vscode debug
 
 ## 通用技巧
 
@@ -177,6 +191,7 @@
     - [view](#view)
     - [menu](#menu)
     - shortcut /setting 等就是反例, **自然使用, 不用刻意练习**
+- 自动提示: 好的工具往往不需要你记忆大量的细节, 编辑过程中的自动提示会让你 **如虎添翼**
 
 ## vscode install
 - 跨平台
@@ -196,7 +211,7 @@ icode -d file1 file2 # 比较文件
 
 ## vscode status bar
 提供相关信息, 点击后可以进入快捷操作:
-- git 信息
+- <a id="status-git">git 信息</a>
 - 编程语言 compiler/interpreter
 - problem
 - 当前 line/column
@@ -226,7 +241,7 @@ menu / view 中有的, 通常也是最常用, 这里就不赘述了, 这里记�
 ## vscode setting
 
 - vscode 几乎所有内容都可以设置
-- 配置范围 default / user / workspace: 只对当前 workspace 生效, 还是对当前用户所有 workspace 都生效
+- 配置范围: default / user / workspace / folder
 - 格式: UI / json
 - 打开方式: `command > setting` / `cmd-,`
 - setting sync
@@ -258,6 +273,8 @@ cmd-j toggle panel
 ctrl-` toggle terminal
 ctrl-g go to line/column
 f12 go to definition
+ctrl-r open recent, 快速切换 workspace/file
+f8 go to problem
 ```
 
 这里着重提供一个特殊的 shortcut: `cmd-shift-h`
@@ -268,5 +285,99 @@ f12 go to definition
 - `ctrl-`\` `view: toggle termianl` 终端间切换
 - `terminal: set default shell`
 
+## vscode git
 
+- `git: ` command palette 可以快速执行 git 命令
+- `toggle inline view` git diff 可以选择 2 种不同视图
+- [status bar](#status-git) 可以查看 git 信息
+- code 设置为 git diff/merge tool
 
+## vscode snippet
+> 可重用代码片段
+
+## vscode task
+> 重复工作自动化: lint compile build test deploy
+
+- 自动检查, 如 npm package.json 中的 npm task, `command > run task > npm`
+
+## vscode run/debug
+
+debug 相关操作:
+- f5 start/continue/stop/restart debug
+- f9 toggle breakpoint
+- f10 step over
+- f11 setp in/out
+
+## vscode extension
+> 善用搜索
+
+- 首页推荐: feature/几个月(vscode 挑选) trending/day/week most-popular(install number) recently-add
+- category: debugger formatter linter ...
+- sort
+- 过滤器 `@`: 上面的 `category` `sort` 都属于过滤器
+- workspace recommend, 详见 [vscode.workspace](vscode.code-workspace)
+---
+插件推荐:
+- **花里胡哨**(我通常不花时间折腾这个...)
+    - bracket pair colorizer 2
+    - indent-rainbow
+    - vscode-pigments: css 颜色
+    - peacock: window 颜色
+- git
+    - github PR: [github desktop](https://desktop.github.com/) 操作更方便
+    - git graph: 确实比 gitk 好看多了, 不过我只用 gitk 干一件事 -- `gitk file` 查看某个文件的历史记录
+    - git lens: 功能太强, 全开会有点卡, 需要自己 熟悉+优化
+- web
+    - web template studio
+    - browser preview: chromium + blink(渲染引擎) -> headless chrome(console 版) / chrome(网页版)
+    - element for edge
+    - debug for chrome/firefox/edge
+- db 数据库管理相关
+- dev 开发类
+    - editorConfig: 统一代码风格
+    - sortlines
+    - code spell checker 拼写检查/自动修复
+    - image preview
+    - output colorize 为 output/.log文件添加语法高亮
+    - debug visualizer 实时的可视化调试
+- tool 工具类
+    - todo tree / todo highlight
+    - bookmarks
+    - polacode 把选中的代码导出为图片格式
+    - wakatime 记录开发者日常编写代码使用情况
+    - codestream 团队协作/代码评审, 和 slack/Microsoft team 集成
+    - paste json as code
+    - data preview
+    - file watcher
+- 容器开发: docker kubernate
+- 移动开发: flutter / react native tools / cordova tools / ionic snippet
+- LeetCode
+- theme 主题相关
+- fun: netease / anime / epub / zhihu / 鼓励师
+
+## vscdoe 编程语言支持
+- feature: highlight bracket intellisense lint go snippet format debug refactor
+- `language mode` 设定语言
+
+### python
+- ext: python
+- `python: ` 系列 command
+    - `interpreter`: 选择 python 解释器, 即本地安装的 python 的版本
+    - `python: run test` `python: discover test`
+- run
+    - `ext: code runner` / `run/debug`
+    - REPL 交互式解释器
+    - jupiter notebook
+        - `ctrl-enter` 运行; `a/b` 添加 cell; `j/k` 上下移动 `l` 显示行号
+        - show variables 显示变量
+        - 查看 plot 图表
+        - save as python script
+- test
+    - status bar: `run test`
+    - 并行执行: `pip install pytest-xdist`
+- ext: python extended / python indent / AREPL for python / autoDocstring / qt for python / djaneiro / flask / batter jinja
+
+### js
+
+- js = ECMAScript(语言语法 + 基本对象) + DOM(文档对象模型, 处理网页内容) + BOM(浏览器对象模型, 与浏览器交互)
+- js 运行时: 浏览器(可以操作 DOM / BOM) / nodejs(可以访问 os/fs api)

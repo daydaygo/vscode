@@ -1,0 +1,39 @@
+{
+	"folders": [
+		// 可以配置 multi-root workspace
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"debug.console.fontSize": 13,
+		"files.autoSave": "afterDelay",
+		"terminal.integrated.fontSize": 13,
+		"workbench.colorTheme": "Default Dark+",
+		"workbench.iconTheme": "vscode-icons",
+		"typescript.tsc.autoDetect": "off",
+		"window.title": "${activeEditorMedium}${separator}${rootName}",
+		"python.pythonPath": "/usr/local/bin/python",
+		"debug.internalConsoleOptions": "openOnSessionStart"
+	},
+	"extensions": {
+		"recommendations": [
+			"humao.rest-client",
+			"formulahendry.code-runner",
+			"github.vscode-pull-request-github",
+			"golang.Go"
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Python: Current File",
+				"type": "python",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal"
+			}
+		]
+	}
+}
