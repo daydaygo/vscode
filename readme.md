@@ -59,6 +59,8 @@
 - IntelliCode 基于AI的智能提示
 - LSP, language server protocol, 包含 completion formatting definition 等功能
 - DAP, debug adapter protocol
+- TS, TypeScript; js/JS, JavaScript
+- FE, front end 通常代指 前端开发
 
 ## 认识 vscode
 > 认识论: 先整体后局部; 先通用后细节
@@ -378,6 +380,52 @@ debug 相关操作:
 - ext: python extended / python indent / AREPL for python / autoDocstring / qt for python / djaneiro / flask / batter jinja
 
 ### js
-
 - js = ECMAScript(语言语法 + 基本对象) + DOM(文档对象模型, 处理网页内容) + BOM(浏览器对象模型, 与浏览器交互)
 - js 运行时: 浏览器(可以操作 DOM / BOM) / nodejs(可以访问 os/fs api)
+- edit
+    - intelliSense 类型自动获取: TS类型申明文件 `.d.ts`; JSDoc(注释)
+    - 类型检查: `@ts-check` `@ts-nocheck`; jsconf/tsconfig 文件
+    - autoImport
+    - jsx
+    - unused: 识别 & 自动移除
+    - codeLens 显示引用次数
+- run
+    - 服务端调试 node
+    - 客户端调试: `ext: debug for chrome/firefox/edge`
+- lint: ESLint JSHint / flow language support / standardJS
+- test: mocha(mocha 测试框架) sidebar / mocha test explorer / jest
+- ext: path intellisense / import cost / quokka.js 调试工具 / code metric 代码复杂度 / js booster 重构 / abracadabra 重构 / turbo console log 自动生成log
+
+### ts
+- `npm i -g typescript` > `tsc t.js` > `node t.js`
+- `npm i -g ts-node` > `ext: code runner`
+- debug: `tsconfig.json + launch.json`
+
+### java
+- java 环境: `brew install openjdk` + 设置环境变量 `JAVA_HOME`, 使用 `java --version` 验证
+- run: `ext: code runner` `ext: debugger for java`(java ext pack 包含, 需要配合 `launch.json`)
+
+### c#
+### c/c++
+### go
+### more
+- php
+- rust
+- dart
+- ruby
+- lua
+- r
+- matlab
+- D
+- F#
+
+## FE
+
+## 云计算
+- aliyun: alibaba cloud toolkit / aliyun serverless
+
+## 物联网
+## 远程
+## vs family
+## 成为 vs code 贡献者
+## vs ext 开发

@@ -14,7 +14,14 @@
 		"typescript.tsc.autoDetect": "off",
 		"window.title": "${activeEditorMedium}${separator}${rootName}",
 		"python.pythonPath": "/usr/local/bin/python",
-		"debug.internalConsoleOptions": "openOnSessionStart"
+		"debug.internalConsoleOptions": "openOnSessionStart",
+		"editor.formatOnSave": true,
+		"files.exclude": {
+			"**/*.js": {
+				"when": "$(basename).ts"
+			}
+		},
+		"code-runner.clearPreviousOutput": true
 	},
 	"extensions": {
 		"recommendations": [
@@ -25,15 +32,14 @@
 		]
 	},
 	"launch": {
-		"version": "0.2.0",
 		"configurations": [
 			{
-				"name": "Python: Current File",
-				"type": "python",
+				"type": "java",
+				"name": "Debug (Launch)",
 				"request": "launch",
-				"program": "${file}",
-				"console": "integratedTerminal"
+				"mainClass": "Hello"
 			}
-		]
+		],
+		"compounds": []
 	}
 }
