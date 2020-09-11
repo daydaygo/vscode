@@ -1,0 +1,31 @@
+{
+    "debug.console.fontSize": 13,
+    "editor.acceptSuggestionOnEnter": "on", // 减少 enter 键 代码补全/插入新行 间的歧义
+    "editor.fontFamily": "'Fira Code'", // 编程常用字体: https://github.com/tonsky/FiraCode/releases
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.renderWhitespace": "all",
+    "editor.tabCompletion": "on",
+    "editor.suggestSelection": "recentlyUsed",
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.fontSize": 13,
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "vscode-icons",
+    "[typescript]": {}, // 语言特定配置
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true
+    },
+}
