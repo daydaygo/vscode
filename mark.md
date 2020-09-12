@@ -1,0 +1,116 @@
+## vscode 权威指南一书的参考资料
+
+- [1] https://code.visualstudio.com/
+- [2] https://github.com/Microsoft/vscode/
+- [3] https://github.com/formulahendry/vscode-code-runner
+- [4] https://github.com/Microsoft/language-server-protocol
+- [5] https://github.com/Microsoft/debug-adapter-protocol
+- [6] https://github.com/Microsoft/monaco-editor
+- [7] https://github.com/Microsoft/vscode-docs
+- [8] https://microsoft.github.io/language-server-protocol/implementors/servers/
+- [9] https://microsoft.github.io/debug-adapter-protocol/implementors/adapters/
+- [10] https://github.com/Tyriar
+- [11] https://code.visualstudio.com/download
+- [12] https://aur.archlinux.org/packages/visual-studio-code-bin
+- [13]https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/editors/vscode/with-extensions.nix
+- [14] https://code.visualstudio.com/download
+- [15] https://code.visualstudio.com/download
+- [16] https://marketplace.visualstudio.com/vscode
+- [17] https://git-scm.com/download
+- [18] https://macromates.com/manual/en/language_grammars
+- [19] https://code.visualstudio.com/api/references/theme-color
+- [20] https://github.com/formulahendry/eslint-starter\
+- [21] https://marketplace.visualstudio.com/vscode
+- [22] https://peacockcode.dev
+- [23] https://db-engines.com/en/ranking
+- [24] https://marketplace.visualstudio.com/vscode
+- [25] https://www.python.org/downloads/windows/
+- [26] https://www.python.org/downloads/mac-osx/
+- [27] https://www.anaconda.com/distribution/
+- [28] https://nodejs.org/en/download/
+- [29] https://nodejs.org/en/download/package-manager/
+- [30] https://flow.org/en/docs/install/
+- [31] https://nodejs.org/en/download/
+- [32] https://nodejs.org/en/download/package-manager/
+- [33] https://aka.ms/vscode-java-installer-win
+- [34] https://adoptopenjdk.net/
+- [35] https://www.azul.com/downloads/azure-only/zulu/
+- [36] https://www.oracle.com/technetwork/java/javase/downloads/index.html
+- [37] https://maven.apache.org/
+- [38] https://dotnet.microsoft.com/download
+- [39] https://sourceforge.net/projects/mingw-w64/files/
+- [40] https://golang.org/dl/
+- [41] https://rustup.rs/
+- [42] https://dartcode.org/
+- [43] https://dlang.org/download.html
+- [44] https://dotnet.microsoft.com/download
+- [45] https://nodejs.org/en/download/
+- [46] https://azure.microsoft.com/zh-cn/free/
+- [47] https://www.azure.cn/zh-cn/pricing/1rmb-trial-full/
+- [48] https://nodejs.org/en/download/
+- [49] https://git-scm.com/download/win
+- [50] https://www.docker.com/products/docker-desktop
+- [51] https://docs.docker.com/install/#supported-platforms
+- [52] https://hub.docker.com/_/microsoft-vscode-devcontainers
+- [53] https://aka.ms/wslstore
+- [54] https://azure.microsoft.com/zh-cn/free/
+- [55] https://online.visualstudio.com/login
+- [56] https://github.com/microsoft/vscode/wiki/How-to-Contribute
+- [57] https://github.com/Microsoft/vscode/issues
+- [58] https://stackoverflow.com/questions/tagged/visual-studio-code
+- [59] https://gitter.im/Microsoft/vscode
+- [60] https://aka.ms/vscode-dev-community
+- [61] https://aka.ms/vscodeloc
+- [62] https://github.com/formulahendry/vscode-dotnet-test-explorer/graphs/contributors
+- [63] https://github.com/microsoft/vscode-extension-samples
+- [64] https://github.com/Microsoft/vscode-extension-samples/tree/master/webview-sample
+- [65] https://github.com/Microsoft/vscode-extension-samples/tree/master/statusbar-sample
+- [66] https://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample
+- [67] https://github.com/Microsoft/vscode-extension-samples/tree/master/task-provider-sample
+- [68]https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample
+- [69] https://github.com/Microsoft/vscode-extension-samples/tree/master/completions-sample
+- [70] https://github.com/Microsoft/vscode-extension-samples/tree/master/code-actions-sample
+- [71] https://github.com/Microsoft/vscode-extension-samples/tree/master/fsprovider-sample
+- [72] https://github.com/Microsoft/vscode-extension-samples/tree/master/decorator-sample
+- [73] https://github.com/Microsoft/vscode-extension-samples/tree/master/i18n-sample
+- [74] https://github.com/Microsoft/vscode-extension-samples/tree/master/terminal-sample
+- [75]https://github.com/Microsoft/vscode-extension-samples/tree/master/extension-terminal-sample
+- [76] https://github.com/Microsoft/vscode-extension-samples/tree/master/vim-sample
+- [77]https://github.com/Microsoft/vscode-extension-samples/tree/master/source-control-sample
+- [78] https://github.com/Microsoft/vscode-extension-samples/tree/master/comment-sample
+- [79]https://github.com/Microsoft/vscode-extension-samples/tree/master/document-editing-sample
+- [80] https://github.com/Microsoft/vscode-extension-samples/tree/master/custom-data-sample
+- [81] https://github.com/Microsoft/vscode-extension-samples/tree/master/codelens-sample
+- [82] https://github.com/Microsoft/vscode-extension-samples/tree/master/snippet-sample
+- [83]https://github.com/Microsoft/vscode-extension-samples/tree/master/language-configuration-sample
+- [84] https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample
+- [85] https://code.visualstudio.com/api/references/vscode-api
+- [86] https://code.visualstudio.com/api/references/commands
+- [87] https://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample
+- [88]https://github.com/microsoft/vscode-extension-samples/blob/master/tree-view-sample/src/nodeDependencies.ts
+- [89]https://github.com/microsoft/vscode-extension-samples/blob/master/tree-view-sample/src/ftpExplorer.ts
+- [90] https://github.com/microsoft/vscode-docker
+- [91] https://github.com/jdneo/vscode-leetcode
+- [92] https://github.com/microsoft/vscode-extension-samples/tree/master/webview-sample
+- [93] https://github.com/eamodio/vscode-gitlens
+- [94] https://github.com/platformio/platformio-vscode-ide
+- [95] https://github.com/microsoft/vscode-extension-samples/tree/master/terminal-sample
+- [96] https://github.com/Tyriar/vscode-terminal-tabs
+- [97] https://github.com/Tyriar/vscode-terminal-here
+- [98] https://colorsublime.github.io/
+- [99] https://tmtheme-editor.herokuapp.com/
+- [100] https://github.com/EmmanuelBeziat/vscode-great-icons
+- [101] https://github.com/be5invis/vscode-iconset
+- [102] https://github.com/rastikerdar/vscode-seedling-icon-theme
+- [103] https://macromates.com/manual/en/language_grammars
+- [104] https://github.com/textmate
+- [105] https://github.com/Microsoft/vscode-extension-samples/tree/master/snippet-sample
+- [106]https://github.com/Microsoft/vscode-extension-samples/tree/master/language-configuration-sample
+- [107] https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts
+- [108] https://code.visualstudio.com/api/references/vscode-api
+- [109] https://github.com/microsoft/vscode-test
+- [110]https://docs.microsoft.com/zh-cn/azure/devops/organizations/accounts/create-organization?view=azure-devops
+- [111] https://code.visualstudio.com/docs
+- [112] https://code.visualstudio.com/api
+- [113]https://docs.microsoft.com/zh-cn/visualstudio/online/overview/what-is-vsonline
+- [114] https://zhuanlan.zhihu.com/p/35303567
