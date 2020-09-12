@@ -358,6 +358,7 @@ debug 相关操作:
 - fun: netease / anime / epub / zhihu / 鼓励师
 
 ## vscdoe 编程语言支持
+> vscode 胜在轻量, 语言支持方面, 需要进行相当多的配置, 才能到 **得心应手** 的状态, 从这个角度来看, 大概是 `vim > vscode > IDE`
 - feature: highlight bracket intellisense lint go snippet format debug refactor
 - `language mode` 设定语言
 
