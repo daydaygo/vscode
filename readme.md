@@ -1,11 +1,11 @@
 # vscode 学习之旅
 
-以下内容使用 mac 下的 vscode insider 版本, 思路是一致的
+备注: 以下内容使用 mac 下的 vscode insider 版本, 思路是一致的
 
 ## 荐书: vscode 权威指南
 - 「我知道, 我改行动了. 这是一片即将变红的蓝海」 -- 作者简述结识相伴历程, 于 2016.6 开始开发 vscode 的插件
 - zen
-    - 搜索 -> 文档工具整理
+    - 搜索
     - 提问
         - [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)
         - 不仅需要好的问题, 也需要好的解决方案
@@ -22,7 +22,7 @@
 
 ## 名与实
 > 名与实的重要性: 很多问题往往只是「语义上」的, 要么是不清楚概念(名), 要么是不清楚概念具体指的是什么(实), 要么就是翻译转换过程导致的名实不符
-> 很多问题其实并不难, 只是前面叠加了一层 **名与实** 的问题, 所以很难, 因为这种问题: 知道就是知道, 不知道就是不知道
+> 很多问题其实并不难, 只是前面叠加了一层 **名与实** 的问题, 所以很难, 因为 **名实问题**: 知道就是知道, 不知道就是不知道
 
 本教程会尽量使用 `英文简写/英文原文`
 - 避免英文翻译产生的歧义
@@ -178,6 +178,9 @@
 ---
 - IntelliSense: 编程语言 -> LSP -> vscode 编程语言插件 -> vscode editor
 - debug: 编程语言 -> 编程语言 debug tool(如: go 使用 delve, PHP 使用 xdebug) -> DAP -> vscode debug adapter(如: php debug 扩展) -> vscode debug
+---
+进程隔离 & 界面渲染隔离
+- main process - IPC - render process - RPC - extension host
 
 ## 通用技巧
 
@@ -209,6 +212,7 @@ ln -s /Applications/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resources/app
 # 查看 icode 支持的功能
 icode -h
 icode -d file1 file2 # 比较文件
+icode -a folder # 添加 folder 到 workspace
 ```
 
 ## vscode status bar

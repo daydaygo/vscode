@@ -1,3 +1,6 @@
+- 玩转VS Code - 知乎专栏: https://zhuanlan.zhihu.com/vs-code
+- [vscode 中文社区](https://github.com/vscodecc)
+
 ## vscode 权威指南一书的参考资料
 
 - [1] https://code.visualstudio.com/
