@@ -275,7 +275,7 @@ cmd-\ editor 双开
 cmd-. quick fix 快速修复
 cmd-w close window
 cmd-b toggle sidebar
-cmd-j toggle panel
+cmd-j toggle panel # 还有一个 command: toggle max panel
 ctrl-` toggle terminal
 ctrl-g go to line/column
 f12 go to definition
@@ -430,7 +430,14 @@ debug 相关操作:
 - aliyun: alibaba cloud toolkit / aliyun serverless
 
 ## 物联网
-## 远程
+## 远程 remote
+- 原理: 本地 vscode-client(UI) -> 远程 vsocode-server
+- ssh 略过 -> 往云原生方向思考
+- container: [go-demo](https://github.com/microsoft/vscode-remote-try-go) dev 容器包含 go+node(vscode server 使用)
 ## vs family
+- vs codespace:
+    - 自托管: 远程client + 本地server
+    - 全过关: 远程client + 远程server
+- live share: session -> join -> code share
 ## 成为 vs code 贡献者
 ## vs ext 开发
